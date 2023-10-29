@@ -21,6 +21,11 @@ body, html {
 }
 
 #right-side {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     padding: 5px;
     margin: 5px;
     background-color: burlywood;
