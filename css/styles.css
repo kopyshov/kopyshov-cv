@@ -1,0 +1,34 @@
+body, html {
+    height: 100%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-auto-rows: minmax(auto, auto);
+}
+
+#left-side {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+    margin: 5px;
+
+    background-color: aqua;
+}
+
+#right-side {
+    padding: 5px;
+    margin: 5px;
+    background-color: burlywood;
+}
+
+#my-photo {
+    margin: 10px;
+    border: solid 3px white;
+    max-width: 100%;
+    flex-shrink: 0;
+}
