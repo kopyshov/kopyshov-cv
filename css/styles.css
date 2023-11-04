@@ -207,16 +207,19 @@ nav .nav li a:hover {
         margin-top: 12px;
     }
     .click span:first-child {
-        transform: rotate(-45deg);
+        transform: rotate(-45grad);
     }
     .click span:nth-child(2) {
+        transform: rotate(45grad);
+
+    }
+    .click span:nth-child(3) {
+        top: 0;
         opacity: 0;
         margin: 0;
+
     }
-    .click span:last-child(2) {
-        transform: rotate(45deg);
-        top: 0;
-    }
+
     nav .nav {
         position: absolute;
         top: 110px;
@@ -239,6 +242,19 @@ nav .nav li a:hover {
         display: block;
         margin-bottom: 15px;
         text-align: center;
+    }
+    .nav.open {
+        position: absolute;
+        top: 110px;
+        right: -10%;
+        bottom: 0;
+        width: 60%;
+        height: 100vh;
+        background-color: #222;
+        z-index: 3;
+        box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
+        transition: 0.5s;
+        padding: 25px 0;
     }
 }
 
