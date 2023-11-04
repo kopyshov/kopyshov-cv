@@ -8,6 +8,7 @@
 
 body {
     overflow-x: hidden;
+    background: #1e1e1e;
 }
 
 .header-1 {
@@ -17,12 +18,12 @@ body {
     background: #1e1e1e;
 }
 
-.head {
+/*.head {
     width: 1280px;
     max-width: 95%;
     margin: 0 auto;
     padding: 0 20px;
-}
+}*/
 
 header {
     padding: 40px 0 30px;
@@ -195,6 +196,174 @@ nav .nav li a:hover {
     transform: rotate(360deg);
 }
 
+.sub-title {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+    color: #fff;
+}
+
+.sub-title span {
+    color: #0ef;
+}
+
+section {
+    padding-top: 4vh;
+    height: 98vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section_pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section_text {
+    align-self: center;
+    text-align: center;
+}
+
+.section_text p {
+    font-size: 60px;
+}
+
+.section-p1 {
+    text-align: center;
+    color: #fff;
+}
+
+.section_text_p2 {
+    font-size: 1.72rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-details-container, .about-containers {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.about-text p {
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+.icon-arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+/*    background: white;*/
+    border-radius: 2rem;
+    border-color: #0ef;
+    text-align: center;
+    background-color: rgb(177, 228, 237);
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.section_pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+#experience {
+    position: relative;
+}
+
+.experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+article .icon {
+    cursor: pointer;
+}
+
+
 @media(max-width: 930px) {
     nav .New {
         display: initial;
@@ -244,17 +413,7 @@ nav .nav li a:hover {
         text-align: center;
     }
     .nav.open {
-        position: absolute;
-        top: 110px;
         right: -10%;
-        bottom: 0;
-        width: 60%;
-        height: 100vh;
-        background-color: #222;
-        z-index: 3;
-        box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
-        transition: 0.5s;
-        padding: 25px 0;
     }
 }
 
@@ -266,4 +425,50 @@ nav .nav li a:hover {
     .home-content {
         padding: 40px 0;
     }
+}
+
+@media screen and (max-width: 1400px) {
+    .about-containers {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #experience,
+    .experience-details-container {
+        margin-top: 2rem;
+    }
+
+    #profile,
+    .section-container {
+        display: block;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    section,
+    .section-container {
+        height: fit-content;
+    }
+
+    section {
+        margin: 0 5%;
+    }
+
+    .section_pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+
+    .about-containers {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-containers
+
 }
