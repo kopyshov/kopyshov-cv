@@ -656,7 +656,7 @@ form textarea {
     }
     .nav.open {
         right: -10%;
-        display: none;
+        z-index: initial;
     }
 }
 
