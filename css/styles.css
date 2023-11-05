@@ -29,7 +29,6 @@ body {
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    /*background: #1e1e1e;*/
 }
 
 header {
@@ -383,8 +382,6 @@ article .icon {
     border-radius: 2rem;
     width: 232px;
     height: 232px;
-    /*width: 90%;*/
-    /*height: 90%;*/
 }
 
 .btn-box1 {
@@ -638,6 +635,7 @@ form textarea {
         position: absolute;
         top: 110px;
         right: -100%;
+        display: none;
         bottom: 0;
         width: 60%;
         height: 100vh;
