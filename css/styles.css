@@ -635,7 +635,6 @@ form textarea {
         position: absolute;
         top: 110px;
         right: -100%;
-        display: none;
         bottom: 0;
         width: 60%;
         height: 100vh;
@@ -657,6 +656,7 @@ form textarea {
     }
     .nav.open {
         right: -10%;
+        display: none;
     }
 }
 
