@@ -32,9 +32,6 @@ body {
 }
 
 header {
-    /*position: fixed;*/
-    /*width: 100%;*/
-    /*top: 0;*/
     padding: 40px 0 30px;
     display: flex;
     justify-content: space-around;
@@ -50,7 +47,7 @@ header {
 
 .logo .logo-text {
     font-size: 34px;
-    font-weight: 500;
+    font-weight: 600;
     color: #fff;
 }
 
@@ -105,7 +102,6 @@ nav .nav li a:hover {
     height: 400px;
     border-radius: 50%;
     overflow: hidden;
-    /*border: 20px solid #444;*/
     box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
     padding: 40px;
     flex-shrink: 0;
