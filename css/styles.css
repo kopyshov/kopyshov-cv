@@ -170,7 +170,6 @@ nav .nav li a:hover {
 
 .btn-box:hover {
     box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
-
 }
 
 .home-content .home-sci i {
@@ -363,6 +362,98 @@ article .icon {
     cursor: pointer;
 }
 
+#projects {
+    position: relative;
+}
+
+.color-container {
+    border-color: rgb(163, 163, 163);
+    background-color: rgb(177, 228, 231);
+}
+
+.project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.btn-box1 {
+    display: inline-block;
+    padding: 5px 18px;
+    background: #00eeff;
+    border-radius: 40px;
+    font-size: 14px;
+    color: #081b29;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 0 5px #00eeff, 0 0 25px #00eeff;
+}
+
+.btn-box1:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+
+@media screen and (max-width: 1920px) {
+    .about-containers {
+        flex-wrap: wrap;
+    }
+    section,
+    .section-container {
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .about-containers {
+        flex-wrap: wrap;
+    }
+    section,
+    .section-container {
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #experience,
+    .experience-details-container {
+        margin-top: 2rem;
+    }
+
+    #profile,
+    .section-container {
+        display: block;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    section,
+    .section-container {
+        height: fit-content;
+    }
+
+    section {
+        margin: 0 5%;
+    }
+
+    .section_pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+
+    .about-containers {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-containers
+
+}
+
 
 @media(max-width: 930px) {
     nav .New {
@@ -425,50 +516,4 @@ article .icon {
     .home-content {
         padding: 40px 0;
     }
-}
-
-@media screen and (max-width: 1400px) {
-    .about-containers {
-        flex-wrap: wrap;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    #experience,
-    .experience-details-container {
-        margin-top: 2rem;
-    }
-
-    #profile,
-    .section-container {
-        display: block;
-    }
-
-    .icon {
-        display: none;
-    }
-
-    section,
-    .section-container {
-        height: fit-content;
-    }
-
-    section {
-        margin: 0 5%;
-    }
-
-    .section_pic-container {
-        width: 275px;
-        height: 275px;
-        margin: 0 auto 2rem;
-    }
-
-    .about-containers {
-        margin-top: 0;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .about-containers
-
 }
