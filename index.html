@@ -85,7 +85,7 @@
                 <div><a href="#" class="btn-box">More About Me</a></div>
             </div>
         </div>
-        <img src="assets/arrow.png" alt="Arrow icon" class="icon-arrow" onclick="location.href='./#experience'">
+<!--        <img src="assets/arrow.png" alt="Arrow icon" class="icon-arrow" onclick="location.href='./#experience'">-->
     </section>
 
     <section id="experience">
@@ -236,10 +236,16 @@
         </div>
         <div class="contact-form">
             <form action="">
-                <input type="" placeholder="Enter Yor Name" required>
-                <input type="email" placeholder="Enter Yor Email" required>
-                <input type="" placeholder="Enter Yor Subject">
-                <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message"></textarea>
+                <label>
+                    <input type="text" placeholder="Enter Yor Name" required>
+                </label>
+                <label>
+                    <input type="email" placeholder="Enter Yor Email" required>
+                </label>
+                <label>
+                    <input type="text" placeholder="Enter Yor Subject">
+                </label>
+                <label for=""></label><textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message"></textarea>
                 <input type="submit" value="submit" class="send">
             </form>
         </div>
@@ -252,21 +258,21 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
     <script>
-        var togglebtn = document.querySelector(".New");
-        var nav = document.querySelector(".nav");
-        var links = document.querySelector(".nav li");
+        const togglebtn = document.querySelector(".New");
+        const nav = document.querySelector(".nav");
+        const links = document.querySelector(".nav li");
 
         togglebtn.addEventListener("click", function () {
             this.classList.toggle("click");
             nav.classList.toggle("open");
         })
 
-        var typed = new Typed(".input", {
+        const typed = new Typed(".input", {
             strings: ["Java Programmer", "Rust Programmer", "Java Programmer", "Rust Programmer", "Java Programmer", "Rust Programmer"],
             typeSpeed: 100,
             backSpeed: 100,
             backDelay: 1000,
-            loop:true
+            loop: true
         });
     </script>
 </body>
